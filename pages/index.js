@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>{" :) "}</title>
       </Head>
-      <div className="relative z-50 w-screen h-screen">
+      <div className="relative z-50 w-screen h-screen bg-black">
         <div className="fixed hidden w-full h-full 2xl:block ">
           <BackgroundVideo className="absolute overlay -z-10" />
         </div>
