@@ -3,9 +3,11 @@ import React from "react";
 const Index = () => {
   return (
     <>
-      <video width="100%" height="100%" autoPlay muted loop>
-        <source src="/vid5.mp4" type="video/mp4" />
-      </video>
+      <div className="w-full h-screen">
+        <video width="100%" height="100%" autoPlay muted loop>
+          <source src="/vid10.mp4" type="video/mp4" />
+        </video>
+      </div>
     </>
   );
 };
