@@ -1,18 +1,20 @@
 import Head from "next/head";
+import ParticlesEffect from "../components/ParticlesEffect/Index";
 import BackgroundVideo from "../components/BackgroundVideo/Index";
 import Typical from "react-typical";
 export default function Home() {
   return (
     <>
       <Head>
-        <title>{" :) "}</title>
+        <title>{" _|_ "}</title>
       </Head>
       <div className="relative z-50 w-screen h-screen bg-black">
         <div className="fixed hidden w-full h-full 2xl:block ">
           <BackgroundVideo className="absolute overlay -z-10" />
+          {/* <ParticlesEffect /> */}
         </div>
         <div className="relative z-50 flex flex-col items-center justify-center w-screen h-screen gap-3 ">
-          <div className="text-5xl font-bold text-creamyWhite">
+          <div className="text-5xl font-bold text-white">
             <span>Tilak Oli</span>
           </div>
           <div className="flex gap-3 text-3xl text-creamyWhite">

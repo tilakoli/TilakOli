@@ -18,7 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
@@ -35,4 +35,4 @@ a {
 }
 .toplayer {
   z-index: 99999 !important;
-}
+} */
