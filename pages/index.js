@@ -10,10 +10,10 @@ export default function Home() {
       </Head>
       <div className="relative z-50 w-screen h-screen bg-black">
         <div className="fixed hidden w-full h-full 2xl:block ">
-          <BackgroundVideo className="absolute overlay -z-10" />
-          {/* <ParticlesEffect /> */}
+          <ParticlesEffect />
+          {/* <BackgroundVideo className="absolute overlay -z-10" /> */}
         </div>
-        <div className="relative z-50 flex flex-col items-center justify-center w-screen h-screen gap-3 ">
+        <div className="relative z-50 flex flex-col items-center justify-center w-screen h-screen gap-3">
           <div className="text-5xl font-bold text-white">
             <span>Tilak Oli</span>
           </div>
@@ -27,6 +27,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="relative h-96 w-96">something here</div>
     </>
   );
 }

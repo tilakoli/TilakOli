@@ -149,7 +149,7 @@ const ParticlesConfig = {
     disable: false,
     reduce: {
       factor: 4,
-      value: true,
+      value: false,
     },
   },
   particles: {
