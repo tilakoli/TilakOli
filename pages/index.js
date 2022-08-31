@@ -2,16 +2,18 @@ import Head from "next/head";
 import ParticlesEffect from "../components/ParticlesEffect/Index";
 import BackgroundVideo from "../components/BackgroundVideo/Index";
 import Typical from "react-typical";
+import { InfinitySpin } from "react-loader-spinner";
+import Loader from "../components/Loader/index";
 export default function Home() {
   return (
     <>
       <Head>
-        <title>{" _|_ "}</title>
+        <title></title>
       </Head>
-      <div className="relative z-50 w-screen h-screen bg-black">
+      {/* <BackgroundVideo className="absolute overlay -z-10" /> */}
+      {/* <div className="relative z-50 w-screen h-screen bg-black">
         <div className="fixed hidden w-full h-full 2xl:block ">
           <ParticlesEffect />
-          {/* <BackgroundVideo className="absolute overlay -z-10" /> */}
         </div>
         <div className="relative z-50 flex flex-col items-center justify-center w-screen h-screen gap-3">
           <div className="text-5xl font-bold text-white">
@@ -20,14 +22,17 @@ export default function Home() {
           <div className="flex gap-3 text-3xl text-creamyWhite">
             <p className="">I am a Web</p>
             <Typical
-              steps={["Developer!", 3000, "Desiger!", 3000]}
+              steps={["Developer", 3000, "Desiger", 3000]}
               loop={Infinity}
               wrapper="p"
             />
           </div>
+      
         </div>
+      </div> */}
+      <div className="bg-gray-600">
+        <Loader />
       </div>
-      <div className="relative h-96 w-96">something here</div>
     </>
   );
 }
