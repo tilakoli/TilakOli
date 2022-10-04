@@ -41,7 +41,6 @@ const index = () => {
               })}
             </div>
           </div>
-
           <div className="flex items-center justify-center border-t-8 border-white h-[17%]">
             bottom
           </div>
