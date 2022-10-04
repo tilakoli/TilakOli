@@ -4,14 +4,14 @@ import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 const Index = () => {
   const [shouldShowSidebar, setShouldShowSidebar] = useState(true);
-  const NavIcons = [
-    <AiFillHome />,
-    <BsFillPersonFill />,
-    <AiFillHome />,
-    <BsFillPersonFill />,
-    <AiFillHome />,
-    <BsFillPersonFill />,
-  ];
+  // const NavIcons = [
+  //   <AiFillHome />,
+  //   <BsFillPersonFill />,
+  //   <AiFillHome />,
+  //   <BsFillPersonFill />,
+  //   <AiFillHome />,
+  //   <BsFillPersonFill />,
+  // ];
   return (
     <>
       <div className="absolute flex items-center justify-end w-screen h-8 p-5 pr-5 md:hidden">
@@ -32,7 +32,10 @@ const Index = () => {
 
           <div className="flex flex-col items-center justify-start text-[2rem] h-3/5">
             <div className="flex flex-col items-center h-2/3 justify-evenly">
-              {NavIcons.map((elem, Index) => {
+              <div className="flex cursor-pointer justify-evenly hover:text-white">
+                <AiFillHome />
+              </div>
+              {/* {NavIcons.map((elem, Index) => {
                 return (
                   <div
                     className="flex cursor-pointer justify-evenly hover:text-white"
@@ -41,7 +44,7 @@ const Index = () => {
                     {elem}
                   </div>
                 );
-              })}
+              })} */}
             </div>
           </div>
           <div className="flex items-center justify-center border-t-8 border-white h-[17%]">
