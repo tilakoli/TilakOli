@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^6.5.1",
+    "hamburger-react": "^2.5.0",
     "next": "12.2.3",
     "react": "v17.0.2",
     "react-awesome-loaders": "^0.1.37",
