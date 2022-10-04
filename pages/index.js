@@ -11,7 +11,7 @@ export default function Home() {
         <title></title>
       </Head>
       {/* <BackgroundVideo className="absolute overlay -z-10" /> */}
-      <div className="relative w-screen h-screen ">
+      <div className="relative w-screen h-screen">
         <div className="-z-50">
           <ParticlesEffect />
         </div>
