@@ -17,7 +17,7 @@ const Index = () => {
         </button>
       </div>
       {shouldShowSidebar && (
-        <div className="w-16 h-screen text-white transition-all duration-700 bg-black opacity-75 md:w-56 ">
+        <div className="w-16 h-screen text-white transition-all duration-700 bg-black opacity-75 md:w-52 ">
           <div className="flex items-center justify-center border-b-8 border-white h-[17%]">
             Top
           </div>

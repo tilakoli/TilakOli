@@ -5,7 +5,7 @@ const Index = () => {
     <>
       <div className="w-full h-screen">
         <video width="100%" height="100%" autoPlay muted loop>
-          <source src="/vid10.mp4" type="video/mp4" />
+          <source src="/vid1.mp4" type="video/mp4" />
         </video>
       </div>
     </>

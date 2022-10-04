@@ -1,14 +1,15 @@
 import Head from "next/head";
 import ParticlesEffect from "../components/ParticlesEffect/Index";
 import BackgroundVideo from "../components/BackgroundVideo/Index";
-import Typical from "react-typical";
 import Loader from "../components/Loader/index";
 import Navigation from "../components/Navigation/index";
+import Homepage from "../components/Homepage/index";
+import SocialLinks from "../components/Elements/SocialLinks";
 export default function Home() {
   return (
     <>
       <Head>
-        <title></title>
+        <title>Kagami</title>
       </Head>
       {/* <BackgroundVideo className="absolute overlay -z-10" /> */}
       <div className="relative w-screen h-screen">
@@ -20,19 +21,10 @@ export default function Home() {
             <Navigation />
           </div>
           <div className="relative flex w-full h-[95vh] md:h-screen mt-10  md:mt-0 items-center justify-center">
-            <div className="flex flex-col items-center text-5xl text-white md:pr-56">
-              <h1 className="font-bold text-[70px] mb-2">Tilak Oli</h1>
-              <div className="flex gap-1 text-[30px]">
-                I am a
-                <span>
-                  <Typical
-                    steps={["Developer", 3000, "Designer", 3000]}
-                    loop={Infinity}
-                    wrapper="p"
-                  />
-                </span>
-              </div>
-            </div>
+            <Homepage />
+          </div>
+          <div className="">
+            <SocialLinks />
           </div>
         </div>
       </div>
