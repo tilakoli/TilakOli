@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Spiral as Hamburger } from "hamburger-react"; // https://hamburger-react.netlify.app/
 import { AiFillHome } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
-const index = () => {
+const Index = () => {
   const [shouldShowSidebar, setShouldShowSidebar] = useState(true);
   const NavIcons = [
     <AiFillHome />,
@@ -32,9 +32,12 @@ const index = () => {
 
           <div className="flex flex-col items-center justify-start text-[2rem] h-3/5">
             <div className="flex flex-col items-center h-2/3 justify-evenly">
-              {NavIcons.map((elem) => {
+              {NavIcons.map((elem, Index) => {
                 return (
-                  <div className="flex cursor-pointer justify-evenly hover:text-white">
+                  <div
+                    className="flex cursor-pointer justify-evenly hover:text-white"
+                    key={Index}
+                  >
                     {elem}
                   </div>
                 );
@@ -50,4 +53,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
