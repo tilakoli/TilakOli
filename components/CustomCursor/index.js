@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-const index = () => {
+const Index = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -38,4 +38,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
