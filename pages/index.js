@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation/index";
 import Homepage from "../components/Homepage/index";
 import SocialLinks from "../components/Elements/SocialLinks";
 import ContactPage from "../components/ContactPage";
+import CustomCursor from "../components/CustomCursor";
 export default function Home() {
   return (
     <>
@@ -28,6 +29,7 @@ export default function Home() {
             <div className="">
               <SocialLinks />
             </div>
+            {/* <CustomCursor /> */}
           </div>
           {/* <ContactPage /> */}
         </div>
