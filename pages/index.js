@@ -5,6 +5,7 @@ import Loader from "../components/Loader/index";
 import Navigation from "../components/Navigation/index";
 import Homepage from "../components/Homepage/index";
 import SocialLinks from "../components/Elements/SocialLinks";
+import ContactPage from "../components/ContactPage";
 export default function Home() {
   return (
     <>
@@ -20,12 +21,15 @@ export default function Home() {
           <div className="relative">
             <Navigation />
           </div>
-          <div className="relative flex w-full h-[95vh] md:h-screen mt-10  md:mt-0 items-center justify-center">
-            <Homepage />
+          <div className="relative flex w-full h-[95vh] md:h-screen">
+            <div className="relative flex w-full h-[95vh] md:h-screen mt-10  md:mt-0 items-center justify-center">
+              <Homepage />
+            </div>
+            <div className="">
+              <SocialLinks />
+            </div>
           </div>
-          <div className="">
-            <SocialLinks />
-          </div>
+          {/* <ContactPage /> */}
         </div>
       </div>
       <div className="bg-gray-600">{/* <Loader /> */}</div>
