@@ -31,9 +31,9 @@ const Index = () => {
       variants={variants}
       initial="hidden"
       animate="default"
-      className="fixed items-center justify-center hidden w-10 h-10 text-center transition-all duration-75 border-2 rounded-full pointer-events-none md:flex z-80 text-md content-none border-primary"
+      className="fixed items-center justify-center hidden w-10 h-10 text-center transition-all duration-75 border rounded-full pointer-events-none md:flex z-80 text-md content-none border-primary"
     >
-      {/* <motion.div className="relative w-2 h-2 bg-white rounded-full"></motion.div> */}
+      <motion.div className="relative w-1 h-1 bg-white rounded-full"></motion.div>
     </motion.div>
   );
 };
