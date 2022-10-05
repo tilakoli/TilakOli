@@ -4,9 +4,9 @@ import Typical from "react-typical";
 const Index = () => {
   return (
     <div>
-      <div className="flex flex-col items-center text-5xl text-white md:pr-56">
-        <h1 className="font-bold text-[70px] mb-2">Tilak Oli</h1>
-        <div className="flex gap-1 text-[30px]">
+      <div className="flex flex-col items-center text-2xl text-white md:text-5xl md:pr-56">
+        <h1 className="font-bold md:text-[70px] mb-2">Tilak Oli</h1>
+        <div className="flex gap-1 md:text-[30px]">
           I am a
           <span>
             <Typical

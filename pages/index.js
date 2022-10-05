@@ -26,7 +26,7 @@ export default function Home() {
             <div className="relative flex w-full h-[95vh] md:h-screen mt-10  md:mt-0 items-center justify-center">
               <Homepage />
             </div>
-            <div className="">
+            <div className="mt-8 ">
               <SocialLinks />
             </div>
             {/* <CustomCursor /> */}

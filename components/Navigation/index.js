@@ -10,7 +10,7 @@ const Index = () => {
   const [shouldShowSidebar, setShouldShowSidebar] = useState(true);
   return (
     <>
-      <div className="absolute flex items-center justify-end w-screen h-8 p-5 pr-5 md:hidden">
+      <div className="absolute z-50 flex items-center justify-end w-screen h-8 p-5 pr-5 md:hidden">
         <button>
           <Hamburger
             toggled={shouldShowSidebar}
