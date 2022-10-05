@@ -34,7 +34,7 @@ export default function Home() {
           {/* <ContactPage /> */}
         </div>
       </div>
-      <div className="bg-gray-600">{/* <Loader /> */}</div>
+      {/* <div className="bg-gray-600"><Loader /></div> */}
     </>
   );
 }
