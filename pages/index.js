@@ -1,8 +1,9 @@
 import Head from "next/head";
 import ParticlesEffect from "../components/ParticlesEffect/Index";
+import Navigation from "../components/Navigation/index";
+import AboutmePage from "../components/AboutmePage";
 import BackgroundVideo from "../components/BackgroundVideo/Index";
 import Loader from "../components/Loader/index";
-import Navigation from "../components/Navigation/index";
 import Homepage from "../components/Homepage/index";
 import SocialLinks from "../components/Elements/SocialLinks";
 import ContactPage from "../components/ContactPage";
@@ -31,7 +32,10 @@ export default function Home() {
             </div>
             <CustomCursor />
           </div>
+
           {/* <ContactPage /> */}
+
+          {/* <AboutmePage /> */}
         </div>
       </div>
       {/* <div className="bg-gray-600"><Loader /></div> */}

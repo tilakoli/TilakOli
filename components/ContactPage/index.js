@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { FiPhoneCall } from "react-icons/fi";
+import Button from "../Elements/button";
 const Index = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -49,10 +50,10 @@ const Index = () => {
     </svg>
   );
   return (
-    <div className="relative items-center flex flex-col w-full h-[95vh] md:h-screen bg-transparent text-white">
+    <div className="relative items-center flex flex-col w-full h-[95vh] md:h-screen  text-white">
       <div className="flex flex-col items-center justify-center gap-2 mt-12 text-3xl font-bold h-28">
         Contact {/*{infinityVector} */}
-        {/* <div className="w-20 border></div> */}
+        <div className="w-full border border-customBlue"></div>
       </div>
       <div className="flex flex-col items-center justify-center gap-5 p-5 rounded-lg md:gap-20 md:w-2/3 backdrop-blur-sm bg-black/50 backdropFilter h-96">
         <div className="flex flex-col items-center justify-center w-full gap-5 md:flex-row">
@@ -78,16 +79,9 @@ const Index = () => {
           placeholder="Your Message"
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button
-          onClick={submit}
-          type="submit"
-          className="p-2 pb-2 border-b hover:border-b-0 hover:border-l-2 hover:transition-transform hover:duration-700"
-        >
-          Send Message
-        </button>
+        <Button onClick={submit} />
       </div>
-      <br />
-      <div className="flex flex-col h-auto p-5 rounded-lg md:p-0 backdrop-blur-sm bg-black/50 md:w-2/3 md:flex-row ">
+      <div className="flex flex-col h-auto p-5 mt-12 rounded-lg md:p-0 backdrop-blur-sm bg-black/50 md:w-2/3 md:flex-row ">
         <div className="flex flex-col items-center justify-center w-full h-full gap-5 p-3 md:border-r md:w-1/3">
           <div className="text-2xl md:text-4xl">
             <AiOutlineMail />
