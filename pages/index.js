@@ -23,6 +23,7 @@ export default function Home() {
           <div className="relative">
             <Navigation />
           </div>
+
           <div className="relative flex w-full h-[95vh] md:h-screen">
             <div className="relative flex w-full h-[95vh] md:h-screen mt-10  md:mt-0 items-center justify-center">
               <Homepage />

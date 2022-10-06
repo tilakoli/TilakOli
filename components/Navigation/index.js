@@ -6,6 +6,8 @@ import { RiProfileFill } from "react-icons/ri";
 import { MdOutlineWork } from "react-icons/md";
 import { GiNotebook } from "react-icons/gi";
 import { HiMail } from "react-icons/hi";
+import ReactTooltip from "react-tooltip";
+
 const Index = () => {
   const [shouldShowSidebar, setShouldShowSidebar] = useState(true);
   return (
@@ -28,23 +30,67 @@ const Index = () => {
 
           <div className="flex flex-col items-center justify-start text-[2rem] h-3/5">
             <div className="flex flex-col items-center h-2/3 justify-evenly">
-              <div className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce">
+              <div
+                data-tip
+                data-for="homeIcon"
+                className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
+              >
                 <AiFillHome />
-              </div>{" "}
-              <div className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce">
+              </div>
+              <div
+                data-tip
+                data-for="about"
+                className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
+              >
                 <BsFillPersonFill />
-              </div>{" "}
-              <div className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce">
+              </div>
+              <div
+                data-tip
+                data-for="resume"
+                className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
+              >
                 <RiProfileFill />
-              </div>{" "}
-              <div className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce">
+              </div>
+              <div
+                data-tip
+                data-for="work"
+                className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
+              >
                 <MdOutlineWork />
-              </div>{" "}
-              <div className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce">
+              </div>
+              <div
+                data-tip
+                data-for="blogs"
+                className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
+              >
                 <GiNotebook />
-              </div>{" "}
-              <div className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce">
+              </div>
+              <div
+                data-tip
+                data-for="contact"
+                className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
+              >
                 <HiMail />
+              </div>
+              <div>
+                <ReactTooltip id="homeIcon" place="top" effect="solid">
+                  Home
+                </ReactTooltip>
+                <ReactTooltip id="about" place="top" effect="solid">
+                  About Me
+                </ReactTooltip>
+                <ReactTooltip id="resume" place="top" effect="solid">
+                  Resume
+                </ReactTooltip>
+                <ReactTooltip id="work" place="top" effect="solid">
+                  Work
+                </ReactTooltip>
+                <ReactTooltip id="blogs" place="top" effect="solid">
+                  Blogs
+                </ReactTooltip>
+                <ReactTooltip id="contact" place="top" effect="solid">
+                  Contact
+                </ReactTooltip>
               </div>
             </div>
           </div>

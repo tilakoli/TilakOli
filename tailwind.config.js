@@ -4,10 +4,6 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    backdropFilter: {
-      none: "none",
-      blur: "blur(20px)",
-    },
     extend: {
       colors: {
         primaryBlack: "#141115",
@@ -18,5 +14,4 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-filters")],
 };
