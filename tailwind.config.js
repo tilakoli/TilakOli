@@ -12,6 +12,9 @@ module.exports = {
         customRed: "#A30015",
         creamyWhite: "#E6FAFC",
       },
+      backgroundImage: {
+        homeBg: "url('/images/home-bg.jpg')",
+      },
     },
   },
 };

@@ -28,7 +28,7 @@ const Index = () => {
             Top
           </div>
 
-          <div className="flex flex-col items-center justify-start text-[2rem] h-3/5">
+          <div className="flex flex-col items-center justify-between text-[2rem] h-3/5">
             <div className="flex flex-col items-center h-2/3 justify-evenly">
               <div
                 data-tip
