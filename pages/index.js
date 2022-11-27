@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import Homepage from "../components/Homepage/index";
 import AboutmePage from "../components/AboutmePage/index";
 import ContactPage from "../components/ContactPage/index";
-// import Navigation from "../components/Navigation/index";
 import Loader from "../components/Loader/index";
 import { useState } from "react";
 import ParticlesEffect from "../components/ParticlesEffect/Index";
