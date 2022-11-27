@@ -8,7 +8,7 @@ import { GiNotebook } from "react-icons/gi";
 import { HiMail } from "react-icons/hi";
 import ReactTooltip from "react-tooltip";
 
-const Index = () => {
+const Index = ({ homeaction, onContactClick, OnAboutMeClick }) => {
   const [shouldShowSidebar, setShouldShowSidebar] = useState(true);
   return (
     <>
@@ -35,14 +35,14 @@ const Index = () => {
                 data-for="homeIcon"
                 className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
               >
-                <AiFillHome />
+                <AiFillHome onClick={homeaction} />
               </div>
               <div
                 data-tip
                 data-for="about"
                 className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
               >
-                <BsFillPersonFill />
+                <BsFillPersonFill onClick={OnAboutMeClick} />
               </div>
               <div
                 data-tip
@@ -70,7 +70,7 @@ const Index = () => {
                 data-for="contact"
                 className="flex cursor-pointer justify-evenly hover:text-customBlue hover:animate-bounce"
               >
-                <HiMail />
+                <HiMail onClick={onContactClick} />
               </div>
               <div>
                 <ReactTooltip id="homeIcon" place="top" effect="solid">
